@@ -19,8 +19,8 @@ const Home: NextPage = () => {
   const defultDesc = 'Tell David to have a meeting next Monday morning from Hudson.'
   console.log("Streamed response: ", {generatedDescs});
   let promptObj = {
-    'English': "UK English",
     "中文": "Simplified Chinese",
+    'English': "UK English",
     "繁體中文": "Traditional Chinese",
     "日本語": "Japanese",
     "Italiano": "Italian",
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Email Generator</title>
+        <title>Email Generator1</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
