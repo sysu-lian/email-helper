@@ -34,7 +34,7 @@ export async function OpenAIStream(payload: OpenAIStreamPayload,user:any) {
   const res = await fetch("https://api.openai.com/v1/chat/completions", {
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.OPENAI_API_KEY ?? ""}`,
+      Authorization: `Bearer ${process.env.OPENAI_API_KEY ?? "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNlODY0N2RiYTEzODI0YjQxY2YwNTA5IiwidXNlcl9uYW1lIjoi5a2m6L6-IiwicmVkaXNfa2V5IjoiNjNlODY0N2RiYTEzODI0YjQxY2YwNTA5IiwibG9naW5fdGltZSI6IjIwMjMtMDQtMTFUMDk6MzQ6MDEuODU2WiIsImlhdCI6MTY4MTIwNTY0MSwiZXhwIjoxNjgxMzc4NDQxfQ.jAHFsTyewmnST8DaYRoiKqKJc4fVu8h5O0HXAI7Xb90"}`,
     },
     method: "POST",
     body: JSON.stringify(payload),
