@@ -1,7 +1,7 @@
 import type { NextRequest } from "next/server";
 // import { ChatGPTMessage, OpenAIStream, OpenAIStreamPayload } from "./OpenAIStream";
 import { ChatGPTMessage, OpenAIStream, OpenAIStreamPayload } from "./OpenAIStream";
-const axios = require("axios");
+// const axios = require("axios");
 
 if (!process.env.OPENAI_API_KEY) {
   throw new Error("Missing env var from OpenAI");
